@@ -2,7 +2,7 @@
 
 **Deploy de RDS PostgreSQL com Terraform e GitHub Actions**
 
-Este repositório contém uma configuração Terraform e um fluxo de trabalho GitHub Actions para implantar um banco de dados PostgreSQL RDS.
+Este repositório contém uma configuração Terraform e um fluxo de trabalho GitHub Actions para implantar um banco de dados PostgreSQL RDS para a API de Payments
 
 **Requisitos**
 
