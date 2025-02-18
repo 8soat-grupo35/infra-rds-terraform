@@ -24,6 +24,7 @@ jobs:
           aws-region: ${{ secrets.AWS_REGION_DEFAULT }}
 
       #Terraform execution
+      - uses: hashicorp/setup-terraform@v3
       - name: Terraform Init
         run: terraform init
 
