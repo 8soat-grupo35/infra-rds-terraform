@@ -18,8 +18,8 @@ resource "aws_db_instance" "payments_postgres_instance" {
 }
 
 # Security group to allow inbound traffic on PostgreSQL port
-resource "aws_security_group" "rds_sg_payments" {
-  name        = "rds_payments_public_access_sg"
+resource "aws_security_group" "rds_payments_sg" {
+  name        = "rds_payments_public_sg_access"
   description = "Allow inbound access to PostgreSQL"
 
   ingress {
