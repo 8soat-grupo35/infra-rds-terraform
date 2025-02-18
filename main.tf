@@ -14,12 +14,12 @@ resource "aws_db_instance" "payments_postgres_instance" {
   parameter_group_name = "default.postgres14"
   publicly_accessible  = true      # Make it publicly accessible
   skip_final_snapshot  = true      # Skip final snapshot on delete
-  vpc_security_group_ids = [aws_security_group.rds_sg_payments.id]  # Link to security group
+  vpc_security_group_ids = [aws_security_group.sg_rds_payments.id]  # Link to security group
 }
 
 # Security group to allow inbound traffic on PostgreSQL port
-resource "aws_security_group" "rds_payments_sg" {
-  name        = "rds_payments_public_sg_access"
+resource "aws_security_group" "sg_rds_payments" {
+  name        = "sg_rds_payments_public_access"
   description = "Allow inbound access to PostgreSQL"
 
   ingress {
