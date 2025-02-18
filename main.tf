@@ -38,5 +38,5 @@ resource "aws_security_group" "rds_sg" {
 }
 
 output "db_endpoint" {
-  value = aws_db_instance.postgres_instance.endpoint
+  value = aws_db_instance.payments_postgres_instance.endpoint
 }
